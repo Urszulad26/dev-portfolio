@@ -5,7 +5,7 @@ header{
 }   
 
 .homepage-header-title{
-    width:65%;
+    width:55%;
     #arrow-icon{
         margin-top:60px;
         width:50px;
@@ -17,15 +17,15 @@ header{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width:35%;
-    &-container{
-        border-radius: 50%;
-        background:url("assets/portrait.png");
-        background-position: center;
-        width: 400px;
-        height: 400px;
+    width:45%;
+    // &-container{
+    //     border-radius: 50%;
+    //     background:url("assets/portrait.png");
+    //     background-position: center;
+    //     width: 350px;
+    //     height: 350px;
 
-    }
+    // }
 }
 
 @media (max-width: 767px) {
@@ -45,6 +45,9 @@ header{
         // flex-direction: column;
         opacity: .25;
         z-index: 1;
+        &-container{
+            margin: 0 auto;
+        }
     }
 }
 

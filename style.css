@@ -240,7 +240,7 @@ header {
 }
 
 .homepage-header-title {
-  width: 65%;
+  width: 55%;
 }
 
 .homepage-header-title #arrow-icon {
@@ -260,15 +260,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 35%;
-}
-
-.homepage-header-image-container {
-  border-radius: 50%;
-  background: url("assets/portrait.png");
-  background-position: center;
-  width: 400px;
-  height: 400px;
+  width: 45%;
 }
 
 @media (max-width: 767px) {
@@ -287,6 +279,9 @@ header {
   .homepage-header-image {
     opacity: .25;
     z-index: 1;
+  }
+  .homepage-header-image-container {
+    margin: 0 auto;
   }
 }
 
