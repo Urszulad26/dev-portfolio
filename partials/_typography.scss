@@ -5,7 +5,7 @@ html{
     font-size: 62.5%;
 }
 
-h1, h2, h3, h4, p, a{
+h1, h2, h3, h4, h5, p, a{
     margin:0;
 }
 
@@ -26,18 +26,32 @@ h2{
 
 h3{
     font-family: $accentfont;
-    font-weight: 600; 
-    font-size: 2.6rem;
-    line-height: 1;
+    font-size: 3.2rem;
+    // color: white;
     // letter-spacing: 1px;
 }
 
 h4{
     font-family: $basefont;
-    text-transform: uppercase;
+    color: $marine;
+    font-size: 1.6rem;
+    font-weight: 600;
+    // letter-spacing: 1px;
+}
+
+a{
+    font-family: $basefont;
+    font-weight: 600;
     font-size: 1.4rem;
-    font-weight: 400;
-    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .15s;
+        &:hover{
+        border-bottom: 2px solid $marine;
+        color: $marine;
+        }
+    // border-bottom: 2px solid black;
 }
 
 p{
@@ -49,8 +63,8 @@ p{
 }
 
 span{
-    &.accent-color-aqua{
-        color: #2CBDC5;
+    &.accent-color-marine{
+        color: #349ab5;
     }
     &.accent-color-white{
         color: white;
@@ -66,11 +80,3 @@ span{
         line-height: 1.2;
     }
 }
-
-// @media (max-width:499px) {
-
-//     h1{
-//         font-size: 3rem;
-//         line-height: 1.2;
-//     }
-// }
