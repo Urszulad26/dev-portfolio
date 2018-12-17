@@ -16,3 +16,61 @@ h1{
     line-height: 1;
     letter-spacing: 0;
 }
+
+h2{
+    font-family: $accentfont;
+    font-weight: 600; 
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+h3{
+    font-family: $accentfont;
+    font-weight: 600; 
+    font-size: 2.6rem;
+    line-height: 1;
+    // letter-spacing: 1px;
+}
+
+h4{
+    font-family: $basefont;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+p{
+    font-family: $basefont;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: grey;
+
+}
+
+span{
+    &.accent-color-aqua{
+        color: #2CBDC5;
+    }
+    &.accent-color-white{
+        color: white;
+    }
+}
+
+
+
+@media (max-width:580px) {
+
+    h1{
+        font-size: 5rem;
+        line-height: 1.2;
+    }
+}
+
+// @media (max-width:499px) {
+
+//     h1{
+//         font-size: 3rem;
+//         line-height: 1.2;
+//     }
+// }

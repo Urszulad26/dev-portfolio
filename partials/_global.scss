@@ -1,8 +1,9 @@
 // COLORS-----------------------------------------
 $lightBlue: #65C0DA;
-$marine: #349AB5;
+$marine: #349ab5;
+$aqua: #2CBDC5;
 $orange: #F09551;
-$yellow: #FFC743;
+$yellow: #FFD164;
 
 
 // GENERAL-----------------------------------------
@@ -30,5 +31,17 @@ img{
     width:100%;
 }
 
+.mobile{
+    display: none;
+}
 
+@media (min-width: 300px) and (max-width: 768px) {
 
+    .mobile{
+    display: block;
+}
+
+    .wrapper {
+        width:90%;
+    }
+}
