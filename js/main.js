@@ -2,6 +2,15 @@
 //     $(this).scrollTop(0);
 // });
 
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+        $("nav").addClass("active");
+    }
+    else {
+        $("nav").removeClass("active");
+    }
+});
 
 // Select all links with hashes
 $('a[href*="#"]')
