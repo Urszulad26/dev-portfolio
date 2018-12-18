@@ -1,6 +1,7 @@
 // refresh page at the top
 $(document).ready(function () {
-    $(this).scrollTop(0);
+    // $(this).scrollTop(0);
+    $("div.mobile-nav-wrapper").removeClass("hidden");
     $("div.mobile-nav").hide();
 });
 
