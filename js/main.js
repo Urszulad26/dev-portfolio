@@ -25,6 +25,9 @@ hamburger.classList.toggle("is-active");
     $("div.mobile-nav").slideToggle("slow");
 });
 
+$("a.nav-link").on("click", function () {
+    $("div.mobile-nav").slideUp("slow");
+});
 
 
 // Select all links with hashes-------------------------

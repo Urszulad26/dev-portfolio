@@ -278,22 +278,29 @@ footer{
         justify-content: center;
         align-content: center;
     }
-    h2, p{
+    h2, h4,  p, .social{
         color: white;
+        margin-bottom: 20px;
     }
     p{
         opacity: .75;
     }
-    .social i{
+
+    .social{
+        a{
+            border-bottom: none;
+        }
+        i{
         opacity: .75;
         font-size: 2.2rem;
         color: white;
         padding-right: 20px;
         transition: .25s;
-        &:hover{
-            transform: scale(1.5);
-            opacity: 1;
-            
+            &:hover{
+                transform: scale(1.5);
+                opacity: 1;
+                
+            }
         }
     }
 }

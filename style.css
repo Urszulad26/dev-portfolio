@@ -696,12 +696,17 @@ footer .wrapper {
       align-content: center;
 }
 
-footer h2, footer p {
+footer h2, footer h4, footer p, footer .social {
   color: white;
+  margin-bottom: 20px;
 }
 
 footer p {
   opacity: .75;
+}
+
+footer .social a {
+  border-bottom: none;
 }
 
 footer .social i {
