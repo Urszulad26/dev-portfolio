@@ -37,7 +37,7 @@ header{
     }
     .homepage-header-image{
         width: 100%;
-        opacity: .25;
+        opacity: .20;
         z-index: 1;
         &-container{
             max-width: 475px;
@@ -75,9 +75,6 @@ header{
         h3{
             font-size: 2.6rem;
         }
-        h4{
-            color: grey;
-        }
         p{
             line-height: 2;
         }
@@ -88,7 +85,7 @@ header{
         display: flex;
         width: 100%;
         span{
-            color: $marine;
+            color: white;
             font-family: $basefont;
             font-size: 1.6rem;
             margin-right: 10px;
@@ -122,6 +119,7 @@ header{
 
 @media (max-width: 767px){
     .about-container{
+        height:110vh;
         position: relative;
         flex-wrap: wrap;
         .about-image, .about-text{
@@ -147,7 +145,7 @@ header{
         justify-content: center;
     }
     h2{
-        margin-bottom: 40px;
+        margin:0 10% 40px;
     }
     p{
         font-size: 1.8rem;
@@ -191,7 +189,6 @@ header{
 
     .portfolio-img{
         width:70%;
-        // min-width:400px;
         .portfolio-img-wrapper{
             width:100%;
             height: 350px;
@@ -244,6 +241,10 @@ header{
 
     .portfolio-img{
         width:100%;
+        img{
+            height:100%;
+            object-fit: cover;
+        }
     }
     .img-right{
         .portfolio-text{
@@ -252,12 +253,11 @@ header{
 }
     .portfolio-text {
         position: absolute;
-        width: 90%;
+        width: 100%;
         bottom: -150px;
         right: 0;
         padding: 5%;
-        margin: 0 5%;
-
+        margin: 0;
     }
 
 }
@@ -288,7 +288,11 @@ footer{
 
     .social{
         a{
-            border-bottom: none;
+        border-bottom: none;
+            &:nth-of-type(5n){
+            i{
+                padding-right: 0;
+            }
         }
         i{
         opacity: .75;
@@ -304,6 +308,7 @@ footer{
         }
     }
 }
+}
 
 @media (max-width: 767px){
 
@@ -316,11 +321,6 @@ footer{
         }
     }
 }
-
-
-
-
-
 
 
 

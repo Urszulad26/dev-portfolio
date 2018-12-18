@@ -180,6 +180,12 @@ body {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -193,6 +199,17 @@ img {
 
 .mobile {
   display: none;
+}
+
+.js div#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: white url("https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif") no-repeat center center;
 }
 
 html {
@@ -249,8 +266,7 @@ a:hover {
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
-  line-height: 1.4;
-  color: grey;
+  line-height: 1.6;
 }
 
 span.accent-color-marine {
@@ -292,8 +308,8 @@ nav .nav-container .wrapper {
 }
 
 nav.active {
-  -webkit-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -420,7 +436,7 @@ header {
   }
   .homepage-header-image {
     width: 100%;
-    opacity: .25;
+    opacity: .20;
     z-index: 1;
   }
   .homepage-header-image-container {
@@ -473,10 +489,6 @@ header {
   font-size: 2.6rem;
 }
 
-.about-container .about-text h4 {
-  color: grey;
-}
-
 .about-container .about-text p {
   line-height: 2;
 }
@@ -489,7 +501,7 @@ header {
 }
 
 .dashed-line span {
-  color: #349ab5;
+  color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   margin-right: 10px;
@@ -529,6 +541,7 @@ header {
 
 @media (max-width: 767px) {
   .about-container {
+    height: 110vh;
     position: relative;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -558,7 +571,7 @@ header {
 }
 
 .skills h2 {
-  margin-bottom: 40px;
+  margin: 0 10% 40px;
 }
 
 .skills p {
@@ -660,16 +673,21 @@ header {
   .portfolio-img {
     width: 100%;
   }
+  .portfolio-img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .img-right .portfolio-text {
     text-align: left;
   }
   .portfolio-text {
     position: absolute;
-    width: 90%;
+    width: 100%;
     bottom: -150px;
     right: 0;
     padding: 5%;
-    margin: 0 5%;
+    margin: 0;
   }
 }
 
@@ -709,7 +727,11 @@ footer .social a {
   border-bottom: none;
 }
 
-footer .social i {
+footer .social a:nth-of-type(5n) i {
+  padding-right: 0;
+}
+
+footer .social a i {
   opacity: .75;
   font-size: 2.2rem;
   color: white;
@@ -718,7 +740,7 @@ footer .social i {
   transition: .25s;
 }
 
-footer .social i:hover {
+footer .social a i:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   opacity: 1;
@@ -731,6 +753,10 @@ footer .social i:hover {
   footer h2 {
     font-size: 2rem;
   }
+}
+
+header.wrapper {
+  overflow-x: hidden;
 }
 
 #master-container {
@@ -778,17 +804,17 @@ footer .social i:hover {
 
 #master-container-scroller .master-container-scroller_item:nth-child(3),
 #master-container-scroller .master-container-scroller_item:nth-child(3) h1 {
-  color: #65C0DA;
+  color: #349ab5;
 }
 
 #master-container-scroller .master-container-scroller_item:nth-child(4),
 #master-container-scroller .master-container-scroller_item:nth-child(4) h1 {
-  color: #F09551;
+  color: #ff8426;
 }
 
 #master-container-scroller .master-container-scroller_item:nth-child(5),
 #master-container-scroller .master-container-scroller_item:nth-child(5) h1 {
-  color: #FFD164;
+  color: #ffbb1d;
 }
 
 #master-container-scroller .master-container-scroller_item:nth-child(6),
@@ -798,7 +824,7 @@ footer .social i:hover {
 
 #master-container-scroller .master-container-scroller_item:nth-child(7),
 #master-container-scroller .master-container-scroller_item:nth-child(7) h1 {
-  color: #FFD164;
+  color: #ffbb1d;
 }
 
 #master-container-scroller .master-container-scroller_item:nth-child(8),
@@ -808,12 +834,29 @@ footer .social i:hover {
 
 #master-container-scroller .master-container-scroller_item:nth-child(9),
 #master-container-scroller .master-container-scroller_item:nth-child(9) h1 {
-  color: #F09551;
+  color: #ff8426;
 }
 
 #master-container-scroller .master-container-scroller_item:nth-child(10),
 #master-container-scroller .master-container-scroller_item:nth-child(10) h1 {
   color: #349ab5;
+}
+
+@media (max-width: 500px) {
+  #master h1 {
+    font-size: 3.4rem;
+    line-height: 1.25;
+  }
+  #master-container-scroller {
+    margin: 5px 0;
+    height: 35px;
+    line-height: 2rem;
+  }
+  #master-container-scroller .master-container-scroller_item {
+    padding: 0;
+    -webkit-animation: none;
+    animation: none;
+  }
 }
 
 @-webkit-keyframes scroll {

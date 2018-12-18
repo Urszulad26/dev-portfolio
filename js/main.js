@@ -3,6 +3,10 @@ $(document).ready(function () {
     // $(this).scrollTop(0);
     $("div.mobile-nav-wrapper").removeClass("hidden");
     $("div.mobile-nav").hide();
+
+    $(window).load(function () {
+        $('#preloader').fadeOut('slow', function () { $(this).remove(); });
+    });
 });
 
 // js for arrow on header
@@ -27,6 +31,7 @@ hamburger.classList.toggle("is-active");
 
 $("a.nav-link").on("click", function () {
     $("div.mobile-nav").slideUp("slow");
+    $(".hamburger").removeClass("is-active");
 });
 
 

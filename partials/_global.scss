@@ -2,8 +2,8 @@
 $lightBlue: #65C0DA;
 $marine: #349ab5;
 $aqua: #2CBDC5;
-$orange: #F09551;
-$yellow: #FFD164;
+$orange: rgb(255, 132, 38);
+$yellow: rgb(255, 187, 29);
 
 
 // GENERAL-----------------------------------------
@@ -18,6 +18,12 @@ body{
     margin: 0 auto;
     position: relative;
     display:flex;
+}
+
+@media(max-width: 767px){
+    .wrapper {
+        width:90%;
+}
 }
 
 ul{
@@ -36,3 +42,5 @@ img{
     display: none;
 }
 
+//https://codepen.io/mimoYmima/pen/fisgL
+.js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: white url('https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif') no-repeat center center; }

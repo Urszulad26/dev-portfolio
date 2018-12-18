@@ -27,8 +27,6 @@ h2{
 h3{
     font-family: $accentfont;
     font-size: 3.2rem;
-    // color: white;
-    // letter-spacing: 1px;
 }
 
 h4{
@@ -36,7 +34,6 @@ h4{
     color: $marine;
     font-size: 1.6rem;
     font-weight: 600;
-    // letter-spacing: 1px;
 }
 
 a{
@@ -51,15 +48,12 @@ a{
         border-bottom: 2px solid $marine;
         color: $marine;
         }
-    // border-bottom: 2px solid black;
 }
 
 p{
     font-family: $basefont;
     font-size: 1.4rem;
-    line-height: 1.4;
-    color: grey;
-
+    line-height: 1.6;
 }
 
 span{
