@@ -1,13 +1,18 @@
 nav {
   height: 70px;
-  background-color: white;
+  background-color: blue;
   position: fixed;
   z-index: 10;
   width: 100%;
-  .wrapper{
-    justify-content: space-between;
+  .nav-container{
+    position: relative;
+    .wrapper{
+      z-index: 10;
+      justify-content: space-between;
+    }
   }
 }
+
 
 nav.active {
      box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2); 
@@ -18,7 +23,7 @@ nav.active {
   padding-top: 16px;
 }
 
-.menu-toggle{
+button.hamburger{
   display: none;
 }
 
@@ -30,27 +35,49 @@ nav.active {
     }
 }
 
+.mobile-nav{
+  display:none;
+}
+
 @media (max-width: 768px){
 
   .nav-links-desktop{
     display: none;
   }
 
-  .menu-toggle{
-    background: none;
-    border:none;
-    padding-top: 20px;
-    display: block;
-    &:hover{
-      color:$marine;
-    }
+  button.hamburger {
+    display: inline-block;
   }
 
-  .menu-toggle i{
-    font-size: 3rem;
+  .mobile-nav{
+    z-index: 2;
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background-color: white;
+    padding-bottom: 75px;
+      ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        li{
+          padding: 20px 0;
+        }
+        li a{
+          font-family: $accentfont;
+          font-weight: 600; 
+          font-size: 4rem;
+          line-height: 1.2;
+        }
+      }
   }
-
-
-
 
 }
+

@@ -1,7 +1,10 @@
-// $(document).ready(function () {
-//     $(this).scrollTop(0);
-// });
+// refresh page at the top
+$(document).ready(function () {
+    $(this).scrollTop(0);
+    $("div.mobile-nav").hide();
+});
 
+// js for arrow on header
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
@@ -12,7 +15,18 @@ $(window).scroll(function () {
     }
 });
 
-// Select all links with hashes
+
+// nav hamburger menu toggle-----------------------
+
+var hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", function () {   
+hamburger.classList.toggle("is-active");
+    $("div.mobile-nav").slideToggle("slow");
+});
+
+
+
+// Select all links with hashes-------------------------
 $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
