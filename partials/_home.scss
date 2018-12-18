@@ -171,7 +171,17 @@ header{
     margin-bottom: 25px;
 }
 
+@media (max-width: 767px){
+
+    .skills{
+        figure{
+            width:50%;
+        }
+    }
+}
+
 // Portfolio ---------------------------------------
+
 .portfolio{
     padding-top: 100px;
 }
@@ -240,6 +250,7 @@ header{
     }
 
     .portfolio-img{
+
         width:100%;
         img{
             height:100%;
@@ -255,7 +266,7 @@ header{
         position: absolute;
         width: 100%;
         bottom: -150px;
-        right: 0;
+        left: 0;
         padding: 5%;
         margin: 0;
     }

@@ -598,6 +598,12 @@ header {
   margin-bottom: 25px;
 }
 
+@media (max-width: 767px) {
+  .skills figure {
+    width: 50%;
+  }
+}
+
 .portfolio {
   padding-top: 100px;
 }
@@ -685,7 +691,7 @@ header {
     position: absolute;
     width: 100%;
     bottom: -150px;
-    right: 0;
+    left: 0;
     padding: 5%;
     margin: 0;
   }
@@ -755,8 +761,8 @@ footer .social a i:hover {
   }
 }
 
-header.wrapper {
-  overflow-x: hidden;
+.mobile-homepage-header-title {
+  display: none;
 }
 
 #master-container {
@@ -843,19 +849,31 @@ header.wrapper {
 }
 
 @media (max-width: 500px) {
-  #master h1 {
-    font-size: 3.4rem;
-    line-height: 1.25;
-  }
+  #master-container,
   #master-container-scroller {
-    margin: 5px 0;
-    height: 35px;
-    line-height: 2rem;
+    display: none;
   }
-  #master-container-scroller .master-container-scroller_item {
-    padding: 0;
-    -webkit-animation: none;
-    animation: none;
+  .homepage-header-title {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .homepage-header-title .mobile-homepage-header-title {
+    padding-bottom: 10%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homepage-header-title .mobile-homepage-header-title h1 {
+    font-size: 3.6rem;
+    line-height: 1;
   }
 }
 
