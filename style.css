@@ -398,10 +398,9 @@ header {
 .homepage-header-title {
   margin-top: 70px;
   width: 55%;
-  min-width: 500px;
 }
 
-.homepage-header-title #arrow-icon {
+#arrow-icon {
   margin-top: 60px;
   width: 50px;
 }
@@ -677,12 +676,17 @@ header {
     margin-bottom: 20px;
   }
   .portfolio-img {
-    width: 100%;
+    width: 95%;
+    left: 0;
+    margin: 0 auto;
   }
   .portfolio-img img {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .img-right .portfolio-img {
+    float: none;
   }
   .img-right .portfolio-text {
     text-align: left;
@@ -759,10 +763,6 @@ footer .social a i:hover {
   footer h2 {
     font-size: 2rem;
   }
-}
-
-.mobile-homepage-header-title {
-  display: none;
 }
 
 #master-container {
@@ -848,6 +848,10 @@ footer .social a i:hover {
   color: #349ab5;
 }
 
+.homepage-header-title .mobile-homepage-header-title {
+  display: none;
+}
+
 @media (max-width: 500px) {
   #master-container,
   #master-container-scroller {
@@ -855,9 +859,9 @@ footer .social a i:hover {
   }
   .homepage-header-title {
     height: 100%;
-    overflow-x: hidden;
   }
   .homepage-header-title .mobile-homepage-header-title {
+    overflow-x: hidden;
     padding-bottom: 10%;
     height: 100%;
     display: -webkit-box;
@@ -1032,164 +1036,6 @@ footer .social a i:hover {
   100.0% {
     -webkit-transform: translateY(-594px);
     transform: translateY(-594px);
-  }
-}
-
-@-webkit-keyframes scroll-mobile {
-  0.0% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  3.7037037037037037% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  11.11111111111111% {
-    -webkit-transform: translateY(-48px);
-    transform: translateY(-48px);
-  }
-  14.814814814814815% {
-    -webkit-transform: translateY(-48px);
-    transform: translateY(-48px);
-  }
-  22.22222222222222% {
-    -webkit-transform: translateY(-96px);
-    transform: translateY(-96px);
-  }
-  25.925925925925927% {
-    -webkit-transform: translateY(-96px);
-    transform: translateY(-96px);
-  }
-  33.333333333333336% {
-    -webkit-transform: translateY(-144px);
-    transform: translateY(-144px);
-  }
-  37.03703703703704% {
-    -webkit-transform: translateY(-144px);
-    transform: translateY(-144px);
-  }
-  44.44444444444444% {
-    -webkit-transform: translateY(-192px);
-    transform: translateY(-192px);
-  }
-  48.148148148148145% {
-    -webkit-transform: translateY(-192px);
-    transform: translateY(-192px);
-  }
-  55.55555555555556% {
-    -webkit-transform: translateY(-240px);
-    transform: translateY(-240px);
-  }
-  59.25925925925926% {
-    -webkit-transform: translateY(-240px);
-    transform: translateY(-240px);
-  }
-  66.66666666666667% {
-    -webkit-transform: translateY(-288px);
-    transform: translateY(-288px);
-  }
-  70.37037037037037% {
-    -webkit-transform: translateY(-288px);
-    transform: translateY(-288px);
-  }
-  77.77777777777777% {
-    -webkit-transform: translateY(-336px);
-    transform: translateY(-336px);
-  }
-  81.48148148148148% {
-    -webkit-transform: translateY(-336px);
-    transform: translateY(-336px);
-  }
-  88.88888888888889% {
-    -webkit-transform: translateY(-384px);
-    transform: translateY(-384px);
-  }
-  92.5925925925926% {
-    -webkit-transform: translateY(-384px);
-    transform: translateY(-384px);
-  }
-  100.0% {
-    -webkit-transform: translateY(-432px);
-    transform: translateY(-432px);
-  }
-}
-
-@keyframes scroll-mobile {
-  0.0% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  3.7037037037037037% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  11.11111111111111% {
-    -webkit-transform: translateY(-48px);
-    transform: translateY(-48px);
-  }
-  14.814814814814815% {
-    -webkit-transform: translateY(-48px);
-    transform: translateY(-48px);
-  }
-  22.22222222222222% {
-    -webkit-transform: translateY(-96px);
-    transform: translateY(-96px);
-  }
-  25.925925925925927% {
-    -webkit-transform: translateY(-96px);
-    transform: translateY(-96px);
-  }
-  33.333333333333336% {
-    -webkit-transform: translateY(-144px);
-    transform: translateY(-144px);
-  }
-  37.03703703703704% {
-    -webkit-transform: translateY(-144px);
-    transform: translateY(-144px);
-  }
-  44.44444444444444% {
-    -webkit-transform: translateY(-192px);
-    transform: translateY(-192px);
-  }
-  48.148148148148145% {
-    -webkit-transform: translateY(-192px);
-    transform: translateY(-192px);
-  }
-  55.55555555555556% {
-    -webkit-transform: translateY(-240px);
-    transform: translateY(-240px);
-  }
-  59.25925925925926% {
-    -webkit-transform: translateY(-240px);
-    transform: translateY(-240px);
-  }
-  66.66666666666667% {
-    -webkit-transform: translateY(-288px);
-    transform: translateY(-288px);
-  }
-  70.37037037037037% {
-    -webkit-transform: translateY(-288px);
-    transform: translateY(-288px);
-  }
-  77.77777777777777% {
-    -webkit-transform: translateY(-336px);
-    transform: translateY(-336px);
-  }
-  81.48148148148148% {
-    -webkit-transform: translateY(-336px);
-    transform: translateY(-336px);
-  }
-  88.88888888888889% {
-    -webkit-transform: translateY(-384px);
-    transform: translateY(-384px);
-  }
-  92.5925925925926% {
-    -webkit-transform: translateY(-384px);
-    transform: translateY(-384px);
-  }
-  100.0% {
-    -webkit-transform: translateY(-432px);
-    transform: translateY(-432px);
   }
 }
 
